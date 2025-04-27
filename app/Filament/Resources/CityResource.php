@@ -66,10 +66,6 @@ class CityResource extends Resource
 
     public static function getPages(): array
     {
-        return [
-            'index' => Pages\ListCities::route('/'),
-            'create' => Pages\CreateCity::route('/create'),
-            'edit' => Pages\EditCity::route('/{record}/edit'),
-        ];
+
     }
 }
