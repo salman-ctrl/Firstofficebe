@@ -32,9 +32,7 @@ class BookingTransactionResource extends Resource
                     ->required()
                     ->maxLength(255),
 
-                Forms\Components\TextInput::make('phone_number')
-                    ->required()
-                    ->maxLength(255),
+
 
                 Forms\Components\TextInput::make('total_amount')
                     ->required()
