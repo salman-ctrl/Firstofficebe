@@ -65,10 +65,6 @@ class ApiKeyResource extends Resource
 
     public static function getPages(): array
     {
-        return [
-            'index' => Pages\ListApiKeys::route('/'),
-            'create' => Pages\CreateApiKey::route('/create'),
-            'edit' => Pages\EditApiKey::route('/{record}/edit'),
-        ];
+
     }
 }
