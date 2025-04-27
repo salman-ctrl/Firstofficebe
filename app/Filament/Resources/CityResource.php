@@ -27,7 +27,9 @@ class CityResource extends Resource
                     ->helperText('Gunakan nama data dengan tepat.')
                     ->required()
                     ->maxLength(255),
-
+                Forms\Components\FileUpload::make('photo')
+                    ->image()
+                    ->required(),
             ]);
     }
 
